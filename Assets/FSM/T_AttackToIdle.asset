@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb167f7b03284a46ab312c4c3978059, type: 3}
+  m_Name: T_AttackToIdle
+  m_EditorClassIdentifier: Assembly-CSharp::T_AttackToIdle
+  fromStates:
+  - {fileID: 11400000, guid: ddde3f1d89478734abfbd3123552dd00, type: 2}
+  - {fileID: 11400000, guid: af18e86192e152943a04044f8fa6dc7a, type: 2}
+  - {fileID: 11400000, guid: eb44c6c12a6f11849a47306722f5da90, type: 2}
+  - {fileID: 11400000, guid: 8bddc5a1245af70489546931d1e44189, type: 2}
+  toState: {fileID: 11400000, guid: a50d8b7cc915d304fbb4a651c8f56c71, type: 2}
