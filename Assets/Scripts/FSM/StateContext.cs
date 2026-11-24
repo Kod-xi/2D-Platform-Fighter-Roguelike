@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class StateContext
@@ -5,6 +6,7 @@ public class StateContext
     public float attackTimer = 0f;
     public bool isAttacking = false;
     private int playerInputDir = 1;
+    private ActionableStates state = ActionableStates.Grounded;
 
     public float PlayerInputDir
     {
@@ -22,6 +24,11 @@ public class StateContext
                 return;
             }
         }
+    }
+
+    public ActionableStates State
+    {
+        get => state;
     }
 
 
@@ -54,3 +61,5 @@ public class StateContext
     public bool isDashing = false;
     public float dashSpeed = 3f/13f;
 }
+
+public enum ActionableStates {Grounded, Airborn};
