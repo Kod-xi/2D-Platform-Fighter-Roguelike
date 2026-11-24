@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float acceleration = 10f;
     private float currentSpeed;
 
+    
+
     private void Awake()
     {
         stateMachine = GetComponent<StateMachineRunner>();
